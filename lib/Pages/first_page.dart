@@ -1,4 +1,5 @@
 import 'package:expense_app/Pages/add_page.dart';
+import 'package:expense_app/Pages/view_page.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
@@ -44,7 +45,7 @@ class FirstPage extends StatelessWidget {
                       )
                   ),
                   onPressed: (){
-                    //Navigator.push(context,MaterialPageRoute(builder: (context)=>ViewHotel()));
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>ViewExpense()));
                   }, child: Text("VIEW ALL EXPENSES")),
             )
           ],
