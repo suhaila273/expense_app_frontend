@@ -28,4 +28,20 @@ class ExpenseApiService {
     }
   }
 
+  Future<List<Expense>> getData() async{
+    var client= http.Client();
+    var apiUrl=Uri.parse("http://localhost:3001/api/exp/view");
+
+    var response= await client.get(apiUrl);
+    if(response.statusCode==200)
+    {
+      return expenseFromJson(response.body);
+    }
+    else
+    {
+      return [];
+    }
+
+  }
+
 }
