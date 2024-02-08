@@ -1,3 +1,4 @@
+import 'package:expense_app/Pages/add_page.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
@@ -28,7 +29,7 @@ class FirstPage extends StatelessWidget {
                         )
                     ),
                     onPressed: (){
-                     // Navigator.push(context, MaterialPageRoute(builder: (context)=>AddHotel()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>AddPage()));
                     }, child: Text("ADD EXPENSE"))),
             SizedBox(height: 30,),
             SizedBox(
